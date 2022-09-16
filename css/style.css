@@ -51,3 +51,7 @@ img {
 .displayed {
     cursor: not-allowed ;
 }
+
+p, h1, h2 {
+    text-align: center;
+}
