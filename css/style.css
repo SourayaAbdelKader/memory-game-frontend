@@ -25,18 +25,21 @@ body {
     grid-template-columns: repeat(3, auto);
 }
 
-.choice {
-    width: 7vw;
-    height: 7vw;
+.box {
+    width: 10vw;
+    height: 10vw;
     background-color: gray;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 img {
-    width: 7vw;
-    height: 7vw;
+    width: 10vw;
+    height: 10vw;
+    visibility: hidden;
 }
 
-.hide {
-    visibility: hidden;
+.show {
+    display: block;
+    visibility: visible;
 }
