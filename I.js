@@ -5,7 +5,7 @@ score = 0;
 
 // in this function, i adjusted the number of pairs with each others, the only problem is when the pairs are clickes the picture are disapearing quickly.
 // same thing for reloading the page, it reloads after loosing, it's reloading right after the you lost message, so I won't appear clearly
-
+// I shouldn't add my code to the eventListener fct, but didn't work otherwise, some variables are not being visible after the function, plus I can't return any variables used in this part.
 
 boxes.forEach((box, i) => {
     box.addEventListener("click", () => {
@@ -14,7 +14,7 @@ boxes.forEach((box, i) => {
         const image = document.getElementById("img"+i);
         image.classList.add("show");
         image.classList.add("displayed");
-
+        // winning choices _ based on the html
         if (choices.length  == 2 ) {
             if ((choices[0] == 0 && choices[1] == 4) || (choices[0] == 4 && choices[1] == 0)) {
                 hide_contants(0, 4);
@@ -50,7 +50,6 @@ boxes.forEach((box, i) => {
 })
 
 
-
 const hideAllPictures = (boxes) => {
         boxes.forEach((box,i) => {
             const image = document.getElementById("img"+i);
@@ -58,6 +57,7 @@ const hideAllPictures = (boxes) => {
     })
 }
 
+// to hide the pairs after finding them
 const hide_contants = (a,b) => {
     let img1 = document.getElementById("img"+a);
     let box1 = document.getElementById("box"+a);
