@@ -1,3 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0cm;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .grid {
     display: grid;
     position: relative;
@@ -5,5 +22,21 @@
     height: fit-content;
     justify-content: center;
     align-content: center;
+    grid-template-columns: repeat(3, auto);
 }
 
+.choice {
+    width: 7vw;
+    height: 7vw;
+    background-color: gray;
+    border: 1px solid white;
+}
+
+img {
+    width: 7vw;
+    height: 7vw;
+}
+
+.hide {
+    visibility: hidden;
+}
