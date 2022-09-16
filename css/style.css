@@ -43,3 +43,11 @@ img {
     display: block;
     visibility: visible;
 }
+
+.transparent {
+    background-color: transparent;
+}
+
+.displayed {
+    display: none;
+}
